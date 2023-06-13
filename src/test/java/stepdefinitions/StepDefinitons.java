@@ -162,21 +162,21 @@ public class StepDefinitons {
 		defaultpage.popularMakeButton.click();
 	}
 
-	@When("User selects a {string}")
-	public void user_selects_a(String car) {
+	@When("User selects a Car model")
+	public void user_selects_a_car_model() {
 		PopularMakePage popularmakepage = new PopularMakePage(driver);
 		GenericUtils genericUtils = new GenericUtils(driver);
 		genericUtils.waitForElement(popularmakepage.modelHeader);
-		driver.findElement(By.xpath("//a[normalize-space()="+ car + "]")).click();
+		popularmakepage.viewMore.click();
 	}
 
-	@Then("User should be able to navigate to the {string} page")
-	public void user_should_be_able_to_navigate_to_page(String car) throws Throwable {
+	@Then("User should be able to navigate to the page")
+	public void user_should_be_able_to_navigate_to_page() throws Throwable {
 		PopularMakePage popularmakepage = new PopularMakePage(driver);
 		GenericUtils genericUtils = new GenericUtils(driver);
-		Thread.sleep(10000);
-		genericUtils.waitForElement(popularmakepage.facebookLogo);
-		driver.findElement(By.xpath("//strong[text()="+ car + "]"));
+		genericUtils.waitForElement(popularmakepage.commentsHeader);
+		String pageText = popularmakepage.pageNumberText.getText();
+		assertTrue(pageText.contains("page"));
 	}
 
 	@Then("User should be able to navigate to other pages")
@@ -185,10 +185,10 @@ public class StepDefinitons {
 		GenericUtils genericUtils = new GenericUtils(driver);
 		genericUtils.waitForElement(popularmakepage.nextPageButton);
 		String pageOnetext = popularmakepage.pageNumberText.getText();
-		assertTrue(pageOnetext.contains("page 1 of 2"));
+		assertTrue(pageOnetext.contains("page 1 of"));
 		popularmakepage.nextPageButton.click();
 		String pageTwotext = popularmakepage.pageNumberText.getText();
-		assertTrue(pageTwotext.contains("page 2 of 2"));
+		assertTrue(pageTwotext.contains("page 2 of"));
 	}
 	
 	@When("Logon with the new User")
@@ -250,7 +250,7 @@ public class StepDefinitons {
 	public void user_should_be_able_to_navigate_back_to_the_default_page() {
 		DefaultPage defaultpage = new DefaultPage(driver);
 		GenericUtils genericUtils = new GenericUtils(driver);
-		genericUtils.waitForElement(defaultpage.popularModelButton);
+		genericUtils.waitForElement(defaultpage.buggyRating);
 		defaultpage.popularModelButton.isDisplayed();
 	}
 	

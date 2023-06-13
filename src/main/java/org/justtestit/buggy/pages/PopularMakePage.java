@@ -13,6 +13,9 @@ public class PopularMakePage {
         @FindBy(xpath = "//h3[normalize-space()='Lamborghini']")
         public WebElement pageLabel;
 
+        @FindBy(partialLinkText = "View more")
+        public WebElement viewMore;
+
         @FindBy(xpath = "//a[normalize-space()='»']")
         public WebElement nextPageButton;
 

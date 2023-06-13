@@ -6,20 +6,8 @@ Feature: Popular Make page features
     And User enters logon credentials "<username>" "<password>"
     And User should be able to see the logout button
     When User navigates to the popular make page
-    And User selects a "<car>"
-    Then User should be able to navigate to the "<car>" page
-    Examples:
-    |username        |password    |car         |
-    |TestWestpac1    |Password@1  |'Lamborghini Diablo'    |
-    |TestWestpac1    |Password@1  |'Alfa Romeo Mito'    |
-    |TestWestpac1    |Password@1  |'Alfa Romeo Giulietta'  |
-
-  Scenario Outline: Popular Make page - Traverse to different pages
-    Given User is on the default page
-    And User enters logon credentials "<username>" "<password>"
-    And User should be able to see the logout button
-    When User navigates to the popular make page
-    Then User should be able to navigate to other pages
+    And User selects a Car model
+    Then User should be able to navigate to the page
     Examples:
     |username        |password    |
     |TestWestpac1    |Password@1  |

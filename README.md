@@ -16,7 +16,7 @@ It is developed with Selenium, Cucumber and JUnit keeping in mind Behaviour Driv
 * jdk 1.8 and above
 * maven
 * Intellij 
-* Latest Webdriver (depending on the browser and the version of the browser used)
+* Latest Webdriver (depending on the type and the version of the browser used)
 
 ### Execution instructions
 

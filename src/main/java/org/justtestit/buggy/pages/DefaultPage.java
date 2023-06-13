@@ -31,10 +31,10 @@ public class DefaultPage {
     @FindBy(xpath = "//a[normalize-space()='Register']")
     public WebElement registerButton;
 
-    @FindBy(xpath = "//img[@title='Lamborghini']")
+    @FindBy(xpath = "//img[@title='Alfa Romeo']")
     public WebElement popularMakeButton;
 
-    @FindBy(xpath = "//img[@title='Diablo']")
+    @FindBy(xpath = "//img[@title='Guilia Quadrifoglio']")
     public WebElement popularModelButton;
 
     @FindBy(xpath = "//span[contains(text(),'Invalid username/password')]")

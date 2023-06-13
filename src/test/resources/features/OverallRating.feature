@@ -21,10 +21,10 @@ Feature: Overall rating page features
     And User selects a "<car>"
     Then User should be able to navigate to the "<carName>" page
     Examples:
-    |username         |password   |car           |carName                    |
-    |TestWestpac1     |Password@1 |'Diablo'      |'Guilia Quadrifoglio'      |
-    |TestWestpac1     |Password@1 |'Lamborghini' |'Diablo'                   |
-    |TestWestpac1     |Password@1 |'Rally 037'   |'Lancia 037 Stradale'      |
+    |username         |password   |car                      |carName                    |
+    |TestWestpac1     |Password@1 |'Guilia Quadrifoglio'    |'Guilia Quadrifoglio'      |
+    |TestWestpac1     |Password@1 |'Lamborghini'            |'Diablo'                   |
+    |TestWestpac1     |Password@1 |'Mito'                   |'Mito'      |
 
    Scenario Outline: Overall rating - Author should be displayed after commenting
     Given User is on the default page

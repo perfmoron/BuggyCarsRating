@@ -1,6 +1,7 @@
 # Buggy Cars Rating automation
 
-Current project aims at writing automated tests for the Buggy Car Rating application based at https://buggy.justtestit.org/
+Current project aims at writing automated tests for the Buggy Car Rating application based at https://buggy.justtestit.org/.
+Is is developed with Selenium, cucomber and Junit keeping in mind Behaviour Driver Development. It would also generate an HTML report and take snapshots in case of failures.
 
 ### Documents for Test Approach and discovered Defects can be found in the /testDocuments directory 
 

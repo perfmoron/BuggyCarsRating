@@ -2,6 +2,8 @@
 
 Current project aims at writing automated tests for the Buggy Car Rating application based at https://buggy.justtestit.org/
 
+### Documents for Test Approach and discovered Defects can be found in the /testDocuments directory 
+
 ### Tools used:
 * Cucumber-jvm: 5.3.0
 * Selenium: 3.13.0

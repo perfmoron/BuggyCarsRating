@@ -13,10 +13,10 @@ Documents for Test Approach and discovered Defects can be found in the /testDocu
 * Maven: 3.9.2
 
 ### Pre-requisites
-* jdk 1.8 and above
-* maven
-* Intellij 
-* Latest Webdriver (depending on the type and the version of the browser used)
+* jdk 1.8 and above - download and install with defaults from the oracle website
+* maven - download from the apache website and add path to environment variables
+* Intellij - community edition is sufficient
+* Chromedriver - Version depending on the type and the version of the browser used. 
 
 ### Execution instructions
 

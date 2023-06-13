@@ -4,8 +4,10 @@ Current project aims at writing automated tests for the Buggy Car Rating applica
 
 ### Tools used:
 * Cucumber-jvm: 5.3.0
-* Selenium:	3.13.0
+* Selenium: 3.13.0
 * Junit: 4.13
+* Java: JDK 17
+* Maven: 3.9.2
 
 ### Pre-requisites
 * jdk 1.8 and above

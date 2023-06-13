@@ -23,3 +23,5 @@ Documents for Test Approach and discovered Defects can be found in the /testDocu
 Execute the 'RunCucumberTest' class in IntelliJ
 or Run the project using the command line with: mvn clean test
 
+Results and the reportmvn can be found under /target/cucumber-reports
+
